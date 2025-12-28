@@ -111,4 +111,58 @@ branch 'lms_airtribe' set up to track 'origin/lms_airtribe'.
 
 
 
+D:\Regular Download\AirTribe\LearnerManagementSystem>git status
+On branch lms_airtribe
+Your branch is up to date with 'origin/lms_airtribe'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Git Command.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   out/production/LearnerManagementSystem/LearnerManagement/LMSRouter.class
+        modified:   out/production/LearnerManagementSystem/utility/BasicMethods.class
+        modified:   src/models/StudentDTO.java
+        modified:   src/service/CourseService.java
+        modified:   src/service/EnrollmentService.java
+        modified:   src/service/StudentService.java
+        modified:   src/serviceImpl/CourseServiceImpl.java
+        modified:   src/serviceImpl/EnrollmentServiceImpl.java
+        modified:   src/serviceImpl/StudentServiceImpl.java
+        modified:   src/utility/BasicMethods.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        out/production/LearnerManagementSystem/models/
+        out/production/LearnerManagementSystem/repository/
+        out/production/LearnerManagementSystem/service/
+        out/production/LearnerManagementSystem/serviceImpl/
+
+
+D:\Regular Download\AirTribe\LearnerManagementSystem>git commit -m "git command use txt and some java changes'"
+[lms_airtribe 83e43bb] git command use txt and some java changes'
+ 1 file changed, 114 insertions(+)
+ create mode 100644 Git Command.txt
+
+D:\Regular Download\AirTribe\LearnerManagementSystem>git pull
+Already up to date.
+
+D:\Regular Download\AirTribe\LearnerManagementSystem>git push  -u origin lms_airtribe
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.54 KiB | 1.54 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for lms_airtribe, visit:
+remote:   https://gitlab.com/na-group8014952/lms/-/merge_requests/new?merge_request%5Bsource_branch%5D=lms_airtribe
+remote:
+To https://gitlab.com/na-group8014952/lms.git
+   4110b05..83e43bb  lms_airtribe -> lms_airtribe
+branch 'lms_airtribe' set up to track 'origin/lms_airtribe'.
+
+D:\Regular Download\AirTribe\LearnerManagementSystem>
 

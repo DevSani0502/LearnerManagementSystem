@@ -15,5 +15,7 @@ public class BasicMethods {
       sc.close();
     }
 
-
+    public static int getIncrementedId(int id){
+        return ++id;
+    }
 }
