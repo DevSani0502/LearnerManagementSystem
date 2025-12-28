@@ -17,22 +17,22 @@ public class LMSRouter {
         int choice = sc.nextInt();
         switch (choice) {
             case 1:
-                System.out.println("Under Student Section we have other operation as well pls processed for them as well");
+                System.out.println("Under Student Section we have other sub-operation as well pls processed for them as well");
 
                 break;
 
             case 2:
-                System.out.println("Under Course Section we have other operation as well pls processed for them as well");
+                System.out.println("Under Student Section we have other sub-operation as well pls processed for them as well");
 
                 break;
 
             case 3:
-                System.out.println("Under Enrollement Section we have other operation as well pls processed for them as well");
+                System.out.println("Under Student Section we have other sub-operation as well pls processed for them as well");
 
                 break;
 
             case 4:
-                System.out.println("Under Enrollement Section we have other operation as well pls processed for them as well");
+                System.out.println("Under Student Section we have other sub-operation as well pls processed for them as well");
 
                 break;
 
@@ -47,21 +47,21 @@ public class LMSRouter {
         System.out.println("1 for Adding New Course");
         System.out.println("2 for Viewing Courses");
         System.out.println("3 for Active and De-Active a Course");
-
+        Scanner sc = new Scanner(System.in);
         int choice = sc.nextInt();
         switch (choice) {
             case 1:
-                System.out.println("Under Student Section we have other operation as well pls processed for them as well");
+                System.out.println("Under Course Section we have other sub-operation as well pls processed for them as well");
             //    lmsRout.subOperationTypesStudents();
                 break;
 
             case 2:
-                System.out.println("Under Course Section we have other operation as well pls processed for them as well");
+                System.out.println("Under Course Section we have other sub-operation as well pls processed for them as well");
            //     lmsRout.subOperationTypesCourse();
                 break;
 
             case 3:
-                System.out.println("Under Enrollement Section we have other operation as well pls processed for them as well");
+                System.out.println("Under Course Section we have other sub-operation as well pls processed for them as well");
             //    lmsRout.subOperationTypesEnrollement();
                 break;
 
@@ -75,21 +75,21 @@ public class LMSRouter {
         System.out.println("1 for Enrolling a student in a course");
         System.out.println("2 for View all enrollments for Students");
         System.out.println("3 for Mark Enrollement as Completed / Cancelled");
-
+        Scanner sc = new Scanner(System.in);
         int choice = sc.nextInt();
         switch (choice) {
             case 1:
-                System.out.println("Under Student Section we have other operation as well pls processed for them as well");
+                System.out.println("Under Enrollement Section we have other sub-operation as well pls processed for them as well");
              //   lmsRout.subOperationTypesStudents();
                 break;
 
             case 2:
-                System.out.println("Under Course Section we have other operation as well pls processed for them as well");
+                System.out.println("Under Enrollement Section we have other sub-operation as well pls processed for them as well");
              //   lmsRout.subOperationTypesCourse();
                 break;
 
             case 3:
-                System.out.println("Under Enrollement Section we have other operation as well pls processed for them as well");
+                System.out.println("Under Enrollement Section we have other sub-operation as well pls processed for them as well");
               //  lmsRout.subOperationTypesEnrollement();
                 break;
 
