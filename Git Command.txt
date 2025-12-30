@@ -108,7 +108,7 @@ To https://gitlab.com/na-group8014952/lms.git
    1d5fcbd..4110b05  lms_airtribe -> lms_airtribe
 branch 'lms_airtribe' set up to track 'origin/lms_airtribe'.
 
-
+in commit was not able to commit by java file bcs of some command missing
 
 
 D:\Regular Download\AirTribe\LearnerManagementSystem>git status
@@ -166,3 +166,75 @@ branch 'lms_airtribe' set up to track 'origin/lms_airtribe'.
 
 D:\Regular Download\AirTribe\LearnerManagementSystem>
 
+
+in this commit was able to commit the java code as well
+
+
+D:\Regular Download\AirTribe\LearnerManagementSystem>
+D:\Regular Download\AirTribe\LearnerManagementSystem>
+D:\Regular Download\AirTribe\LearnerManagementSystem>git status
+On branch lms_airtribe
+Your branch is up to date with 'origin/lms_airtribe'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Git Command.txt
+        modified:   out/production/LearnerManagementSystem/LearnerManagement/LMSRouter.class
+        modified:   out/production/LearnerManagementSystem/utility/BasicMethods.class
+        modified:   src/models/StudentDTO.java
+        modified:   src/service/CourseService.java
+        modified:   src/service/EnrollmentService.java
+        modified:   src/service/StudentService.java
+        modified:   src/serviceImpl/CourseServiceImpl.java
+        modified:   src/serviceImpl/EnrollmentServiceImpl.java
+        modified:   src/serviceImpl/StudentServiceImpl.java
+        modified:   src/utility/BasicMethods.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        out/production/LearnerManagementSystem/models/
+        out/production/LearnerManagementSystem/repository/
+        out/production/LearnerManagementSystem/service/
+        out/production/LearnerManagementSystem/serviceImpl/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Regular Download\AirTribe\LearnerManagementSystem>
+D:\Regular Download\AirTribe\LearnerManagementSystem>
+D:\Regular Download\AirTribe\LearnerManagementSystem>
+D:\Regular Download\AirTribe\LearnerManagementSystem>
+D:\Regular Download\AirTribe\LearnerManagementSystem>git add .
+
+D:\Regular Download\AirTribe\LearnerManagementSystem>git commit -m "txt and some java changes"
+[lms_airtribe 286269c] txt and some java changes
+ 23 files changed, 132 insertions(+), 4 deletions(-)
+ create mode 100644 out/production/LearnerManagementSystem/models/CourseDTO.class
+ create mode 100644 out/production/LearnerManagementSystem/models/EnrollmentDTO.class
+ create mode 100644 out/production/LearnerManagementSystem/models/StudentDTO.class
+ create mode 100644 out/production/LearnerManagementSystem/repository/CourseRepo.class
+ create mode 100644 out/production/LearnerManagementSystem/repository/EnrollmentRepo.class
+ create mode 100644 out/production/LearnerManagementSystem/repository/StudentRepo.class
+ create mode 100644 out/production/LearnerManagementSystem/service/CourseService.class
+ create mode 100644 out/production/LearnerManagementSystem/service/EnrollmentService.class
+ create mode 100644 out/production/LearnerManagementSystem/service/StudentService.class
+ create mode 100644 out/production/LearnerManagementSystem/serviceImpl/CourseServiceImpl.class
+ create mode 100644 out/production/LearnerManagementSystem/serviceImpl/EnrollmentServiceImpl.class
+ create mode 100644 out/production/LearnerManagementSystem/serviceImpl/StudentServiceImpl.class
+
+D:\Regular Download\AirTribe\LearnerManagementSystem>git push  -u origin lms_airtribe
+Enumerating objects: 59, done.
+Counting objects: 100% (59/59), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (35/35), done.
+Writing objects: 100% (39/39), 6.52 KiB | 1.09 MiB/s, done.
+Total 39 (delta 12), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for lms_airtribe, visit:
+remote:   https://gitlab.com/na-group8014952/lms/-/merge_requests/new?merge_request%5Bsource_branch%5D=lms_airtribe
+remote:
+To https://gitlab.com/na-group8014952/lms.git
+   83e43bb..286269c  lms_airtribe -> lms_airtribe
+branch 'lms_airtribe' set up to track 'origin/lms_airtribe'.
+
+D:\Regular Download\AirTribe\LearnerManagementSystem>
