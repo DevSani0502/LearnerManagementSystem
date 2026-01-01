@@ -1,101 +1,130 @@
 package LearnerManagement;
 
+import service.StudentService;
+import service.CourseService;
+import service.EnrollmentService;
+import serviceImpl.StudentServiceImpl;
+import serviceImpl.CourseServiceImpl;
+import serviceImpl.EnrollmentServiceImpl;
 import utility.BasicMethods;
 
 import java.util.Scanner;
 
 public class LMSRouter {
 
-    public void subOperationTypesStudents(){
-        System.out.println("Pls Enter your sub-operation type:");
-        System.out.println("1 for Adding New Student");
-        System.out.println("2 for Viewing Students");
-        System.out.println("3 for Search of a Student");
-        System.out.println("4 for De-Activating the Student");
-        Scanner sc = new Scanner(System.in);
-        BasicMethods bms = new BasicMethods();
-        int choice = sc.nextInt();
-        switch (choice) {
-            case 1:
-                System.out.println("Under Student Section we have other sub-operation as well pls processed for them as well");
+    private final Scanner sc;
 
-                break;
+    StudentService student = new StudentServiceImpl();
+    CourseService course = new CourseServiceImpl();
+    EnrollmentService enrollment = new EnrollmentServiceImpl();
+ //   BasicMethods bms = new BasicMethods();
 
-            case 2:
-                System.out.println("Under Student Section we have other sub-operation as well pls processed for them as well");
-
-                break;
-
-            case 3:
-                System.out.println("Under Student Section we have other sub-operation as well pls processed for them as well");
-
-                break;
-
-            case 4:
-                System.out.println("Under Student Section we have other sub-operation as well pls processed for them as well");
-
-                break;
-
-            default:
-                System.out.println("Invalid choice");
-        }
-        bms.closeScannerConnection(sc);
+    // Scanner comes from LMSMain
+    public LMSRouter(Scanner sc) {
+        this.sc = sc;
     }
 
-    public void subOperationTypesCourse(){
+    public void subOperationTypesStudents() {
         System.out.println("Pls Enter your sub-operation type:");
-        System.out.println("1 for Adding New Course");
-        System.out.println("2 for Viewing Courses");
-        System.out.println("3 for Active and De-Active a Course");
-        Scanner sc = new Scanner(System.in);
-        int choice = sc.nextInt();
-        switch (choice) {
-            case 1:
-                System.out.println("Under Course Section we have other sub-operation as well pls processed for them as well");
-            //    lmsRout.subOperationTypesStudents();
-                break;
+        BasicMethods.subOperationTypesStudentsOptions();
+        boolean exit = false;
 
-            case 2:
-                System.out.println("Under Course Section we have other sub-operation as well pls processed for them as well");
-           //     lmsRout.subOperationTypesCourse();
-                break;
+        while (!exit) {
+            int choice = sc.nextInt();
 
-            case 3:
-                System.out.println("Under Course Section we have other sub-operation as well pls processed for them as well");
-            //    lmsRout.subOperationTypesEnrollement();
-                break;
-
-            default:
-                System.out.println("Invalid choice");
+            switch (choice) {
+                case 1:
+                    student.addNewStudent();
+                    System.out.println("Student added successfully! Returning to menu...");
+                    BasicMethods.subOperationTypesStudentsOptions();
+                    break;
+                case 2:
+                    student.viewAllStudent();
+                    BasicMethods.subOperationTypesStudentsOptions();
+                    break;
+                case 3:
+                    student.getStudentById();
+                    BasicMethods.subOperationTypesStudentsOptions();
+                    break;
+                case 4:
+                    student.deactivateStudentById();
+                    BasicMethods.subOperationTypesStudentsOptions();
+                    break;
+                case 0:
+                    exit = true;
+                    System.out.println("Thank you for using LMS...! Sry, but pls try completing the process ");
+                //    bms.closeScannerConnection(sc);
+                    break;
+                default:
+                    System.out.println("Invalid choice");
+                    System.out.println("Pls Enter your sub-operation type:");
+                    BasicMethods.subOperationTypesStudentsOptions();
+            }
         }
     }
 
-    public void subOperationTypesEnrollement(){
-        System.out.println("Pls Enter your sub-operation type:");
-        System.out.println("1 for Enrolling a student in a course");
-        System.out.println("2 for View all enrollments for Students");
-        System.out.println("3 for Mark Enrollement as Completed / Cancelled");
-        Scanner sc = new Scanner(System.in);
-        int choice = sc.nextInt();
-        switch (choice) {
-            case 1:
-                System.out.println("Under Enrollement Section we have other sub-operation as well pls processed for them as well");
-             //   lmsRout.subOperationTypesStudents();
-                break;
+    public void subOperationTypesCourse() {
+        BasicMethods.subOperationTypesCourseOptions();
+        boolean exit = false;
 
-            case 2:
-                System.out.println("Under Enrollement Section we have other sub-operation as well pls processed for them as well");
-             //   lmsRout.subOperationTypesCourse();
-                break;
+        while (!exit) {
+            int choice = sc.nextInt();
 
-            case 3:
-                System.out.println("Under Enrollement Section we have other sub-operation as well pls processed for them as well");
-              //  lmsRout.subOperationTypesEnrollement();
-                break;
-
-            default:
-                System.out.println("Invalid choice");
+            switch (choice) {
+                case 1:
+                    course.addNewCourse();
+                    System.out.println("Course added successfully ..!");
+                    BasicMethods.subOperationTypesCourseOptions();
+                    break;
+                case 2:
+                    course.viewAllCourse();
+                    BasicMethods.subOperationTypesCourseOptions();
+                    break;
+                case 3:
+                    course.actionOnCourseById();
+                    BasicMethods.subOperationTypesCourseOptions();
+                    break;
+                case 0:
+                    exit = true;
+                    System.out.println("Thank you for using LMS...! Sry, but pls try completing the process ");
+                //    bms.closeScannerConnection(sc);
+                    break;
+                default:
+                    System.out.println("Invalid choice");
+                    BasicMethods.subOperationTypesCourseOptions();
+            }
         }
     }
 
+    public void subOperationTypesEnrollement() {
+    BasicMethods.subOperationTypesEnrollmentOptions();
+        boolean exit = false;
+
+        while (!exit) {
+            int choice = sc.nextInt();
+
+            switch (choice) {
+                case 1:
+                    enrollment.enrollStudent();
+                    BasicMethods.subOperationTypesEnrollmentOptions();
+                    break;
+                case 2:
+                    enrollment.viewAllEnrolledStudent();
+                    BasicMethods.subOperationTypesEnrollmentOptions();
+                    break;
+                case 3:
+                    enrollment.markEnrollmentById();
+                    BasicMethods.subOperationTypesEnrollmentOptions();
+                    break;
+                case 0:
+                    exit = true;
+                    System.out.println("Thank you for using LMS...! Sry, but pls try completing the process ");
+                //    bms.closeScannerConnection(sc);
+                    break;
+                default:
+                    System.out.println("Invalid choice");
+                    BasicMethods.subOperationTypesEnrollmentOptions();
+            }
+        }
+    }
 }
