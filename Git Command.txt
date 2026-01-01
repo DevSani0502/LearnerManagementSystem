@@ -237,4 +237,73 @@ To https://gitlab.com/na-group8014952/lms.git
    83e43bb..286269c  lms_airtribe -> lms_airtribe
 branch 'lms_airtribe' set up to track 'origin/lms_airtribe'.
 
-D:\Regular Download\AirTribe\LearnerManagementSystem>
+
+
+also tried the new via of posting the command via the git 
+
+MINGW64 /d/Regular Download/AirTribe/LearnerManagementSystem (lms_airtribe)
+$git status
+On branch lms_airtribe
+Your branch is up to date with 'origin/lms_airtribe'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   out/production/LearnerManagementSystem/LearnerManagement/LMSMain.class
+        modified:   out/production/LearnerManagementSystem/LearnerManagement/LMSRouter.class
+        modified:   out/production/LearnerManagementSystem/models/CourseDTO.class
+        modified:   out/production/LearnerManagementSystem/models/EnrollmentDTO.class
+        modified:   out/production/LearnerManagementSystem/models/StudentDTO.class
+        modified:   out/production/LearnerManagementSystem/serviceImpl/StudentServiceImpl.class
+        modified:   out/production/LearnerManagementSystem/utility/BasicMethods.class
+        modified:   src/LearnerManagement/LMSMain.java
+        modified:   src/LearnerManagement/LMSRouter.java
+        modified:   src/serviceImpl/CourseServiceImpl.java
+        modified:   src/serviceImpl/EnrollmentServiceImpl.java
+        modified:   src/serviceImpl/StudentServiceImpl.java
+        modified:   src/utility/BasicMethods.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git
+        out/production/LearnerManagementSystem/enums/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MINGW64 /d/Regular Download/AirTribe/LearnerManagementSystem (lms_airtribe)
+$ git add .
+warning: in the working copy of 'src/LearnerManagement/LMSMain.java', LF will be replaced by CRLF the next time Git touches it
+
+
+ MINGW64 /d/Regular Download/AirTribe/LearnerManagementSystem (lms_airtribe)
+$ git commit -m "final changes"
+[lms_airtribe e505a73] final changes
+ 15 files changed, 428 insertions(+), 113 deletions(-)
+ create mode 100644 git
+ create mode 100644 out/production/LearnerManagementSystem/enums/EnrollmentStatus.class
+
+
+ MINGW64 /d/Regular Download/AirTribe/LearnerManagementSystem (lms_airtribe)
+$ git pull origin lms_airtribe
+From https://gitlab.com/na-group8014952/lms
+ * branch            lms_airtribe -> FETCH_HEAD
+Already up to date.
+
+MINGW64 /d/Regular Download/AirTribe/LearnerManagementSystem (lms_airtribe)
+$ git push origin lms_airtribe
+Enumerating objects: 51, done.
+Counting objects: 100% (51/51), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (29/29), 12.80 KiB | 2.56 MiB/s, done.
+Total 29 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for lms_airtribe, visit:
+remote:   https://gitlab.com/na-group8014952/lms/-/merge_requests/new?merge_request%5Bsource_branch%5D=lms_airtribe
+remote:
+To https://gitlab.com/na-group8014952/lms.git
+   85b7c03..e505a73  lms_airtribe -> lms_airtribe
+
+
+MINGW64 /d/Regular Download/AirTribe/LearnerManagementSystem (lms_airtribe)
+$git commit -a -m "Git file latest try run"
