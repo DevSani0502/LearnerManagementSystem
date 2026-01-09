@@ -6,7 +6,7 @@ Reinitialized existing Git repository in D:/Regular Download/AirTribe/LearnerMan
 
 D:\Regular Download\AirTribe\LearnerManagementSystem>git config user.name "Sani0502"
 
-D:\Regular Download\AirTribe\LearnerManagementSystem>git config user.email "devsanitiwari@gmail.com"
+D:\Regular Download\AirTribe\LearnerManagementSystem>git config user.email "ForGit@gmail.com"
 
 D:\Regular Download\AirTribe\LearnerManagementSystem>git add .
 warning: in the working copy of 'src/LearnerManagement/LMSMain.java', LF will be replaced by CRLF the next time Git touches it
@@ -307,3 +307,24 @@ To https://gitlab.com/na-group8014952/lms.git
 
 MINGW64 /d/Regular Download/AirTribe/LearnerManagementSystem (lms_airtribe)
 $git commit -a -m "Git file latest try run"
+
+ MINGW64 /d/Regular Download/AirTribe/LearnerManagementSystem (lms_airtribe)
+$ git pull origin lms_airtribe
+From https://gitlab.com/na-group8014952/lms
+ * branch            lms_airtribe -> FETCH_HEAD
+Already up to date.
+
+MINGW64 /d/Regular Download/AirTribe/LearnerManagementSystem (lms_airtribe)
+$ git push origin lms_airtribe
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 805 bytes | 805.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: To create a merge request for lms_airtribe, visit:
+remote:   https://gitlab.com/na-group8014952/lms/-/merge_requests/new?merge_request%5Bsource_branch%5D=lms_airtribe
+remote:
+To https://gitlab.com/na-group8014952/lms.git
+   e505a73..69881f3  lms_airtribe -> lms_airtribe

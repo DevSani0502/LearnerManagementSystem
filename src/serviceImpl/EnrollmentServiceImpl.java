@@ -11,6 +11,7 @@ import java.util.Scanner;
 
 public class EnrollmentServiceImpl implements EnrollmentService {
     private static List<EnrollmentDTO> enrollments = new ArrayList<>();
+
     @Override
     public void enrollStudent() {
         Scanner sc = new Scanner(System.in);
