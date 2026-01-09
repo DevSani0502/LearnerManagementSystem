@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="LMS" type="JarApplication">
+    <option name="WORKING_DIRECTORY" value="D:\Regular Download\AirTribe\LearnerManagementSystem" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="ALTERNATIVE_JRE_PATH" value="11" />
+    <module name="LearnerManagementSystem" />
+    <method v="2" />
+  </configuration>
+</component>
