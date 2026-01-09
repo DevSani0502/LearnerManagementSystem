@@ -167,3 +167,40 @@ Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/DevSani0502/LearnerManagementSystem.git
 4d00d80..c59f3d9  LMS -> LMS
+
+
+
+
+pushed the same code in the main branch
+
+D:\Regular Download\AirTribe\LearnerManagementSystem>git add .
+
+D:\Regular Download\AirTribe\LearnerManagementSystem>git commit -m "Save local changes before switching branches"
+[LMS c665123] Save local changes before switching branches
+1 file changed, 20 insertions(+), 1 deletion(-)
+
+D:\Regular Download\AirTribe\LearnerManagementSystem>git checkout main
+branch 'main' set up to track 'origin/main'.
+Switched to a new branch 'main'
+
+D:\Regular Download\AirTribe\LearnerManagementSystem>
+D:\Regular Download\AirTribe\LearnerManagementSystem>
+D:\Regular Download\AirTribe\LearnerManagementSystem>
+D:\Regular Download\AirTribe\LearnerManagementSystem>git merge LMS --allow-unrelated-histories
+Auto-merging README.md
+CONFLICT (add/add): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+D:\Regular Download\AirTribe\LearnerManagementSystem>git push origin main
+Everything up-to-date
+
+D:\Regular Download\AirTribe\LearnerManagementSystem>git push origin LMS:main --force
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 544 bytes | 544.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/DevSani0502/LearnerManagementSystem.git
++ 3249c8a...c665123 LMS -> main (forced update)
